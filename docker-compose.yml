@@ -1,0 +1,39 @@
+version: "3"
+services:
+  scraper:
+    build:
+      context: ./scraper
+      dockerfile: Dockerfile
+    volumes:
+      - ./scraper:/app
+    depends_on:
+      - mysql
+    restart: unless-stopped
+
+  nodejs:
+    build:
+      context: ./bet_game
+      dockerfile: Dockerfile
+    volumes:
+      - ./bet_game:/app
+    depends_on:
+      - mysql
+    ports:
+      - 3000:3000
+    restart: unless-stopped
+
+  mysql:
+    image: mysql:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=gaming_data
+    volumes:
+      - mysql_data:/var/lib/mysql
+    ports:
+      - 3307:3306
+    expose:
+      - 3307
+    restart: unless-stopped
+
+volumes:
+  mysql_data:

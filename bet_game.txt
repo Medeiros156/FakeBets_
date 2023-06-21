@@ -1,0 +1,56 @@
+
+mysql -u root -p
+npx prisma migrate dev --name init
+
+docker-compose exec nodejs sh
+
+
+
+dcoker cant stop: sudo aa-remove-unknown
+
+Day 1: Project Setup and Database Design
+
+Set up the Node.js TypeScript project structure.
+Install necessary dependencies, including Prisma, Express, and other required packages.
+Create the database schema and design the data models using Prisma.
+Generate Prisma client and set up the database connection.
+
+Day 2: Implement Backend Logic and Prisma Integration
+
+Create the necessary backend logic for gaming functionality, such as game rules, calculations, and validations.
+Implement Prisma integration to perform CRUD operations with the MySQL database.
+Test the backend logic and Prisma ORM operations.
+
+Day 3: Laravel Middleware Setup
+
+Set up a Laravel project to handle authentication and routing.
+Implement the necessary middleware for user login and authentication.
+Test the Laravel middleware with sample routes and authentication scenarios.
+
+Day 4: React Tailwind Frontend Setup
+
+Set up a React project and configure TypeScript support.
+Install required dependencies, including React, Tailwind CSS, and any additional packages for frontend development.
+Create the basic page structure for the games and user manage bets pages.
+Implement routing using React Router to navigate between pages.
+
+Day 5: Games Page Frontend
+
+Implement the frontend logic for the games page, including fetching game data from the backend and displaying it.
+Design and style the games page using Tailwind CSS.
+Test the games page functionality and ensure proper integration with the backend.
+
+Day 6: User Manage Bets Page Frontend
+
+Implement the frontend logic for the user manage bets page, such as fetching user bets and displaying them.
+Design and style the user manage bets page using Tailwind CSS.
+Test the user manage bets page functionality and integration with the backend.
+
+Day 7: Integration and Testing
+
+Integrate the frontend and backend components together.
+Test the complete system, including end-to-end functionality, authentication, and data storage.
+Conduct thorough testing and bug fixing to ensure everything works as expected.
+Deploy the application to a hosting environment of your choice.
+
+Feel free to copy each box individually for your reference. Good luck with your project!
